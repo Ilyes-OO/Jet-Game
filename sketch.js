@@ -123,13 +123,13 @@ function draw() {
     spawnBall1();
     spawnBall2();
     //Text commands
-    textSize(25);
+    textSize(40);
     textFont("Impact")
-    text(name1 + "'s" + " attempts : " + attempts, 25, 70);
-    text(name2 + "'s" + " attempts : " + attempts2, 900, 70);
-    textSize(25);
+    text(name1 + "'s" + " attempts : " + attempts, 50, 70);
+    text(name2 + "'s" + " attempts : " + attempts2, 950, 70);
+    textSize(40);
     textFont("Impact")
-    text(name1 + "'s" + " score : " + score, 400, 70);
+    text(name1 + "'s" + " score : " + score, 500, 70);
     text(name2 + "'s" + " score : " + score2, 1400, 70);
   }
   else if (gameState == 2) {
@@ -177,7 +177,7 @@ function draw() {
 }
 
 function spawnBall1() {
-  if (frameCount % 7 === 0) {
+  if (frameCount % 4 === 0) {
     ball1 = createSprite(-100, 50, 20, 20);
     ball1.y = Math.round(random(0, 670));
     ball1.shapeColor = "red"
@@ -188,7 +188,7 @@ function spawnBall1() {
 }
 
 function spawnBall2() {
-  if (frameCount % 7 === 0) {
+  if (frameCount % 4 === 0) {
     ball2 = createSprite(1900, 50, 20, 20);
     ball2.y = Math.round(random(0, 670));
     ball2.shapeColor = "red"
