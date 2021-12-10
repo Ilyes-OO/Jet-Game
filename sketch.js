@@ -177,7 +177,7 @@ function draw() {
 }
 
 function spawnBall1() {
-  if (frameCount % 4 === 0) {
+  if (frameCount % 7 === 0) {
     ball1 = createSprite(-100, 50, 20, 20);
     ball1.y = Math.round(random(0, 670));
     ball1.shapeColor = "red"
@@ -188,7 +188,7 @@ function spawnBall1() {
 }
 
 function spawnBall2() {
-  if (frameCount % 4 === 0) {
+  if (frameCount % 7 === 0) {
     ball2 = createSprite(1900, 50, 20, 20);
     ball2.y = Math.round(random(0, 670));
     ball2.shapeColor = "red"
