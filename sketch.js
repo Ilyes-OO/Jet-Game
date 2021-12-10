@@ -129,8 +129,8 @@ function draw() {
     text(name2 + "'s" + " attempts : " + attempts2, 900, 70);
     textSize(25);
     textFont("Impact")
-    text(name1 + "'s" + " score : " + score, 350, 70);
-    text(name2 + "'s" + " score : " + score2, 1300, 70);
+    text(name1 + "'s" + " score : " + score, 400, 70);
+    text(name2 + "'s" + " score : " + score2, 1400, 70);
   }
   else if (gameState == 2) {
     player1.visible = false;
